@@ -1,0 +1,58 @@
+.texto{
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Secular One', sans-serif;
+}
+.claro1{
+    color:#8FE3CF;
+}
+
+.papafooter{
+    display: grid;
+    background-color: #002B5B;
+    grid-template-rows: 50% 25% 25%; 
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+    "columna1 columna2 columna3"
+    "botones botones botones"
+    "botfoot botfoot botfoot"
+    ;
+}
+.midfoot{
+    display: flex;
+    grid-area: botones;
+    min-height: 100%;
+    height: 5rem;
+}
+.botfoot{
+    grid-area: botfoot;
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+    align-items: center;
+    background-color: #002B5B;
+}
+/* ------------botones ----------------*/
+.buttons {
+    min-width: 700px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons a {
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+    transform: scale(1.2);
+}
+/* --------------------------------- */
